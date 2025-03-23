@@ -114,7 +114,6 @@ export default {
 				const ips = ipsParam.trim().split(",").filter(ip => !!ip)
 				const enriched = await enrich(ips)
 				const content = genTable(enriched.results)
-				console.log(content)
 				return new Response(index.replace(/\<!--content--\>.*\<!--content--\>/, content), {headers: {"content-type": "text/html"}})
 			case "/pico.min.css":
 				return new Response(picocss, {headers: {"content-type": "text/css"}})
