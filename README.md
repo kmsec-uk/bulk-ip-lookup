@@ -34,6 +34,6 @@ This provides a HTTPS interface that generates a HTML table or JSON via API.
 }
 ```
 
-* HTPPS: `/?ips=1.1.1.1,8.8.8.8`
+* HTML: `/?ips=1.1.1.1,8.8.8.8`
 
 
